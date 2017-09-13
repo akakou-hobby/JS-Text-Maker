@@ -1,0 +1,71 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body,
+.bg-skew {
+  height: 100%;
+}
+
+body {
+  background: #222;
+  font-family: 'Source Sans Pro', sans-serif;
+  position: relative;
+}
+
+.bg-skew {
+  background: tomato;
+  -webkit-transform: skew(0deg, -10deg);
+  transform: skew(0deg, -10deg);
+  padding: 200px 0;
+  margin-top: -190px;
+}
+
+.content {
+  width: 60%;
+  -webkit-transform: skew(0deg, 10deg);
+  transform: skew(0deg, 10deg);
+}
+
+.content,
+footer,
+nav a {
+  color: #fff;
+}
+
+.content {
+  padding-top: 160px;
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+.content p {
+  font-weight: 300;
+  padding-top: 12px;
+}
+
+.content a {
+  font-weight: 400;
+  color: #fff;
+  padding: 3px;
+  border-radius: 3px;
+  white-space: nowrap;
+}
+
+.content a:hover {
+  background: #222;
+  color: #fff;
+}
+
+.shadow {
+  box-shadow: 0px 0px 5px 3px rgba(0, 0, 0, .6);
+}
+
+.notscroll::-webkit-scrollbar{
+    display: none;
+  }
